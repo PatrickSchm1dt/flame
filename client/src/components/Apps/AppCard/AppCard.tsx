@@ -47,7 +47,7 @@ export const AppCard = ({ app }: Props): JSX.Element => {
   return (
     <a
       href={redirectUrl}
-      target={config.appsSameTab ? '' : '_blank'}
+      target={config.appsSameTab ? '_top' : '_blank'}
       rel="noreferrer"
       className={classes.AppCard}
     >

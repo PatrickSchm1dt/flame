@@ -90,7 +90,7 @@ export const BookmarkCard = (props: Props): JSX.Element => {
           return (
             <a
               href={redirectUrl}
-              target={config.bookmarksSameTab ? '' : '_blank'}
+              target={config.bookmarksSameTab ? '_top' : '_blank'}
               rel="noreferrer"
               key={`bookmark-${bookmark.id}`}
             >
